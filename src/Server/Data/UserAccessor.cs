@@ -2,7 +2,7 @@
 
 using Microsoft.AspNetCore.Identity;
 
-using Wangkanai.Architecture.Identity;
+using Wangkanai.Pipeline.Identity;
 
 namespace Wangkanai.Pipeline.Data
 {
