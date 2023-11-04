@@ -34,7 +34,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 	options.UseSqlServer(
 		connectionString,
-		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Architecture")));
+		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Pipeline")));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
