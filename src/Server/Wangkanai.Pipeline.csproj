@@ -46,6 +46,8 @@
 	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarBrand.razor" />
 	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarMenu.razor" />
 	  <_ContentIncludedByDefault Remove="Components\Layout\Sidebar\SidebarMenuItem.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Project\Index.razor" />
+	  <_ContentIncludedByDefault Remove="Components\Pages\Project\_Imports.razor" />
 	</ItemGroup>
 
 	<ItemGroup>
