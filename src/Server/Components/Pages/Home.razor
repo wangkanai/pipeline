@@ -1,0 +1,13 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<PageTitle>Clean Architecture</PageTitle>
+
+@code{
+
+	protected override void OnInitialized()
+	{
+		NavigationManager.NavigateTo("/Deal");
+	}
+
+}

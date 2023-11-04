@@ -17,23 +17,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{93AB00AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{4EEA8D47-F55A-408B-8226-7235D18A234A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Domain.UnitTests", "tests\Domain\Wangkanai.Architecture.Domain.UnitTests.csproj", "{156767FE-5A1C-4175-B168-485D745A6313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Pipeline.Domain.UnitTests", "tests\Domain\Wangkanai.Pipeline.Domain.UnitTests.csproj", "{156767FE-5A1C-4175-B168-485D745A6313}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application.UnitTests", "tests\Application\Wangkanai.Architecture.Application.UnitTests.csproj", "{C7668D28-1D47-4412-AB0F-266972DC914C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.APipeline.Application.UnitTests", "tests\Application\Wangkanai.APipeline.Application.UnitTests.csproj", "{C7668D28-1D47-4412-AB0F-266972DC914C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Application.IntegrationTests", "tests\Integration\Wangkanai.Architecture.Application.IntegrationTests.csproj", "{2FBE8805-0030-4C98-B953-568FB1496155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Pipeline.Application.IntegrationTests", "tests\Integration\Wangkanai.Pipeline.Application.IntegrationTests.csproj", "{2FBE8805-0030-4C98-B953-568FB1496155}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Architecture.Benchmark", "benchmark\Wangkanai.Architecture.Benchmark.csproj", "{9A4CD93F-DC4B-4031-812F-9CD640A39258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Pipeline.Benchmark", "benchmark\Wangkanai.Pipeline.Benchmark.csproj", "{9A4CD93F-DC4B-4031-812F-9CD640A39258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture", "src\Server\Wangkanai.Architecture.csproj", "{12B05608-2F35-437F-A24F-54E3D942D3C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Pipeline", "src\Server\Wangkanai.Pipeline.csproj", "{12B05608-2F35-437F-A24F-54E3D942D3C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Client", "src\Client\Wangkanai.Architecture.Client.csproj", "{E851B3AD-A553-46BE-A2EA-3B771C835E7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Pipeline.Client", "src\Client\Wangkanai.Pipeline.Client.csproj", "{E851B3AD-A553-46BE-A2EA-3B771C835E7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Domain", "src\Domain\Wangkanai.Architecture.Domain.csproj", "{C650CBC9-8A06-4C2D-A64D-611623E1882A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Pipeline.Domain", "src\Domain\Wangkanai.Pipeline.Domain.csproj", "{C650CBC9-8A06-4C2D-A64D-611623E1882A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Application", "src\Application\Wangkanai.Architecture.Application.csproj", "{C1703F13-046C-4DAC-99E0-45F23C8CA849}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Pipeline.Application", "src\Application\Wangkanai.Pipeline.Application.csproj", "{C1703F13-046C-4DAC-99E0-45F23C8CA849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Architecture.Infrastructure", "src\Infrastructure\Wangkanai.Architecture.Infrastructure.csproj", "{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Pipeline.Infrastructure", "src\Infrastructure\Wangkanai.Pipeline.Infrastructure.csproj", "{52F2EF65-D6EA-447F-B6AC-EEBB62604ACB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sonar", ".sonar", "{E5A79B79-26B7-4E41-BE1D-8DEFBDEFD913}"
 	ProjectSection(SolutionItems) = preProject
