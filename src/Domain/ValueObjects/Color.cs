@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 using Wangkanai.Domain.Common;
 
-namespace Wangkanai.Architecture.ValueObjects;
+namespace Wangkanai.Pipeline.ValueObjects;
 
 [Owned]
 public class Color : ValueObject

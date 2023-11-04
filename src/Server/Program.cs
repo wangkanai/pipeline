@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
-using Wangkanai.Architecture.Client.Pages;
-using Wangkanai.Architecture.Components;
-using Wangkanai.Architecture.Data;
-using Wangkanai.Architecture.Identity;
-using Wangkanai.Architecture.Infrastructure.Persistence;
+using Wangkanai.Pipeline.Client.Pages;
+using Wangkanai.Pipeline.Components;
+using Wangkanai.Pipeline.Data;
+using Wangkanai.Pipeline.Identity;
+using Wangkanai.Pipeline.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +34,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 	options.UseSqlServer(
 		connectionString,
-		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Architecture")));
+		optionsBuilder => optionsBuilder.MigrationsAssembly("Wangkanai.Pipeline")));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)

@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Wangkanai.Architecture.Identity;
+using Wangkanai.Pipeline.Identity;
 
 namespace Wangkanai.Pipeline.Infrastructure.Persistence.Configurations;
 

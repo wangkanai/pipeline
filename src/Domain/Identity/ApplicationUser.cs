@@ -2,7 +2,7 @@
 
 using Microsoft.AspNetCore.Identity;
 
-namespace Wangkanai.Architecture.Identity;
+namespace Wangkanai.Pipeline.Identity;
 
 public class ApplicationUser : IdentityUser<string>
 {

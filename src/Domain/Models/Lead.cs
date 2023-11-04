@@ -1,9 +1,9 @@
 // Copyright (c) 2014-2024 Sarin Na Wangkanai, All Rights Reserved.
 
-using Wangkanai.Architecture.ValueObjects;
+using Wangkanai.Pipeline.ValueObjects;
 using Wangkanai.Domain;
 
-namespace Wangkanai.Architecture.Models;
+namespace Wangkanai.Pipeline.Models;
 
 public class Lead : AuditableEntity<int>
 {

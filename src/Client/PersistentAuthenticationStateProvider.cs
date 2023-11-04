@@ -5,7 +5,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 
-namespace Wangkanai.Architecture.Client
+namespace Wangkanai.Pipeline.Client
 {
 	public class PersistentAuthenticationStateProvider(PersistentComponentState persistentState) : AuthenticationStateProvider
 	{

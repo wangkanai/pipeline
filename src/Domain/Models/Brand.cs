@@ -2,7 +2,7 @@
 
 using Wangkanai.Domain;
 
-namespace Wangkanai.Architecture.Models;
+namespace Wangkanai.Pipeline.Models;
 
 public class Brand : AuditableEntity<int>
 {

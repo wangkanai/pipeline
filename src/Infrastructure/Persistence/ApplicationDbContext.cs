@@ -4,8 +4,8 @@ using System.Reflection;
 
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-using Wangkanai.Architecture.Identity;
-using Wangkanai.Architecture.Models;
+using Wangkanai.Pipeline.Identity;
+using Wangkanai.Pipeline.Models;
 
 namespace Wangkanai.Pipeline.Infrastructure.Persistence;
 
