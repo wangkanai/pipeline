@@ -3,12 +3,24 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+.vs/
+.idea/
+lib/
+Migrations/
+
+package-lock.json
+
+**/wwwroot/*.css
+**/wwwroot/*.css.map
+
 # User-specific files
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+*.sln.dotsettings
+*.sln.dotsettings.user
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
