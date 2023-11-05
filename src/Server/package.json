@@ -9,8 +9,8 @@
 	"sass": "wwwroot/scss/app.scss",
 	"scripts": {
 		"scss": "npm-run-all scss-compile scss-minify",
-		"scss-compile": "sass --style expanded --source-map --embed-sources --no-error-css wwwroot/scss/app.scss wwwroot/app.css",
-		"scss-minify": "cleancss -O1 wwwroot/app.css --output wwwroot/app.min.css --input-source-map wwwroot/app.css.map --format breakWith=lf --with-rebase",
+		"scss-compile": "sass --style expanded --source-map --embed-sources --no-error-css wwwroot/scss/pipeline.scss wwwroot/pipeline.css",
+		"scss-minify": "cleancss -O1 wwwroot/pipeline.css --output wwwroot/pipeline.min.css --input-source-map wwwroot/pipeline.css.map --format breakWith=lf --with-rebase",
 		"watch": "npm-run-all --parallel watch-scss",
 		"watch-scss": "nodemon --watch wwwroot/scss/ --ext scss --exec \"npm-run-all scss-compile scss-minify\"",
 		"watch-lint": "nodemon --watch wwwroot/scss/ --ext scss --exec \"npm-run-all scss-lint scss-compile\"",
