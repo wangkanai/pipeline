@@ -11,6 +11,7 @@
     <File Path="Version.ps1" />
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
+    <File Path=".github\workflows\dotnet.yml" />
   </Folder>
   <Folder Name="/tests/" />
   <Project Path="src\Client\Wangkanai.Pipeline.Web.Client.csproj" Type="Classic C#" />
