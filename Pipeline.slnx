@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/.solutions/">
+    <File Path="build.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="LICENSE" />
+    <File Path="qodana.sarif.json" />
+    <File Path="README.md" />
+    <File Path="sign.ps1" />
+    <File Path="Version.ps1" />
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Project Path="src\Client\Wangkanai.Pipeline.Web.Client.csproj" Type="Classic C#" />
+  <Project Path="src\Mobile\Wangkanai.Pipeline.csproj" Type="Classic C#" />
+  <Project Path="src\Server\Wangkanai.Pipeline.Web.csproj" Type="Classic C#" />
+  <Project Path="src\Shared\Wangkanai.Pipeline.Shared.csproj" Type="Classic C#" />
+</Solution>
