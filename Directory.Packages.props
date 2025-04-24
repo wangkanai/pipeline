@@ -2,13 +2,13 @@
 	<PropertyGroup>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 		<FrameworkVersion>9.0.4</FrameworkVersion>
-		<MauiVersion>9.0.21</MauiVersion>
+<!--		<MauiVersion>9.0.21</MauiVersion>-->
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="$(FrameworkVersion)" Condition="'$(UseMaui)' != 'true'" />
+		<PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" Condition="'$(UseMaui)' != 'true'" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
+		<PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" Condition="'$(UseMaui)' != 'true'" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)" />
 	</ItemGroup>
