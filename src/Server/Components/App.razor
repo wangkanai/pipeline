@@ -5,15 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
-    <link rel="stylesheet" href="_content/Wangkanai.Pipeline.Shared/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="_content/Wangkanai.Pipeline.Shared/app.css" />
-    <link rel="stylesheet" href="Wangkanai.Pipeline.Web.styles.css" />
-    <link rel="icon" type="image/png" href="_content/Wangkanai.Pipeline.Shared/favicon.png" />
-    <HeadOutlet @rendermode="InteractiveAuto" />
+    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="@Assets["app.css"]" />
+    <link rel="stylesheet" href="@Assets["Wangkanai.Pipeline.styles.css"]" />
+    <ImportMap />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <HeadOutlet />
 </head>
 
 <body>
-    <Routes @rendermode="InteractiveAuto" />
+    <Routes />
     <script src="_framework/blazor.web.js"></script>
 </body>
 

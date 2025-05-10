@@ -2,14 +2,15 @@
 	<PropertyGroup>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 		<FrameworkVersion>9.0.4</FrameworkVersion>
-<!--		<MauiVersion>9.0.21</MauiVersion>-->
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="$(FrameworkVersion)" Condition="'$(UseMaui)' != 'true'" />
-		<PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" Condition="'$(UseMaui)' != 'true'" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" Condition="'$(UseMaui)' != 'true'" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)" />
+		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)" />
+		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(FrameworkVersion)" />
+		<PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(FrameworkVersion)" />
+		<PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(FrameworkVersion)" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(FrameworkVersion)" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(FrameworkVersion)" />
 	</ItemGroup>
 </Project>

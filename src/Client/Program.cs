@@ -1,10 +1,9 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Wangkanai.Pipeline.Shared.Services;
-using Wangkanai.Pipeline.Web.Client.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-// Add device-specific services used by the Wangkanai.Pipeline.Shared project
-builder.Services.AddSingleton<IFormFactor, FormFactor>();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddCascadingAuthenticationState();
+builder.Services.AddAuthenticationStateDeserialization();
 
 await builder.Build().RunAsync();

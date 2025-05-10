@@ -14,8 +14,6 @@
     <File Path=".github\workflows\dotnet.yml" />
   </Folder>
   <Folder Name="/tests/" />
-  <Project Path="src\Client\Wangkanai.Pipeline.Web.Client.csproj" Type="Classic C#" />
-  <Project Path="src\Mobile\Wangkanai.Pipeline.csproj" Type="Classic C#" />
-  <Project Path="src\Server\Wangkanai.Pipeline.Web.csproj" Type="Classic C#" />
-  <Project Path="src\Shared\Wangkanai.Pipeline.Shared.csproj" Type="Classic C#" />
+  <Project Path="src\Client\Wangkanai.Pipeline.Client.csproj" Type="Classic C#" />
+  <Project Path="src\Server\Wangkanai.Pipeline.csproj" Type="Classic C#" />
 </Solution>
