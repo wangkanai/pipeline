@@ -8,8 +8,8 @@ lib/
 dist/
 .idea/
 .vscode/
-package-lock.json
-Data/
+#Data/
+#package-lock.json
 
 # User-specific files
 *.rsuser
