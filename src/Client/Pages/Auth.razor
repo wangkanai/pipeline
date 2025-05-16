@@ -6,9 +6,12 @@
 @rendermode InteractiveAuto
 
 <PageTitle>Auth</PageTitle>
+<div class="page-body">
+<div class="container-fluid">
+	<h1>You are authenticated</h1>
 
-<h1>You are authenticated</h1>
-
-<AuthorizeView>
-    Hello @context.User.Identity?.Name!
-</AuthorizeView>
+	<AuthorizeView>
+		Hello @context.User.Identity?.Name!
+	</AuthorizeView>
+</div>
+</div>
