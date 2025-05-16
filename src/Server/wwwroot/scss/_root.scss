@@ -9,3 +9,14 @@
 :root,
 [data-bs-theme="dark"] {
 }
+
+@media (min-width: 992px) {
+	:host,
+	:root {
+		margin-left: 0;
+	}
+}
+
+body {
+	overflow-y: scroll;
+}
