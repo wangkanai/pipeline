@@ -4,6 +4,10 @@
 		<FrameworkVersion>9.0.4</FrameworkVersion>
 	</PropertyGroup>
 	<ItemGroup>
+		<!--sourcelink-->
+		<PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
+		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
+		<!--framework-->
 		<PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="$(FrameworkVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)" />
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)" />
@@ -13,5 +17,15 @@
 		<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(FrameworkVersion)" />
 		<PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(FrameworkVersion)" />
 		<PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(FrameworkVersion)"/>
+		<!--tests -->
+		<PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="9.0.4" />
+		<PackageVersion Include="Microsoft.TestPlatform.TestHost" Version="17.13.0" />
+		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageVersion Include="xunit" Version="2.9.3" />
+		<PackageVersion Include="xunit.categories" Version="3.0.1" />
+		<PackageVersion Include="xunit.runner.visualstudio" Version="3.1.0" PrivateAssets="all" />
+		<PackageVersion Include="xunit.runner.msbuild" Version="2.9.3" PrivateAssets="all" />
+		<PackageVersion Include="coverlet.collector" Version="6.0.4" PrivateAssets="all" />
+		<PackageVersion Include="coverlet.msbuild" Version="6.0.4" PrivateAssets="all" />
 	</ItemGroup>
 </Project>
