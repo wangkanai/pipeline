@@ -14,10 +14,28 @@
 		<HeadOutlet/>
 	</head>
 
-	<body>
+	<body data-bs-theme="@ThemeSelected">
 		<Routes/>
 		<script src="lib/tabler/dist/js/tabler.min.js"></script>
 		<script src="_framework/blazor.web.js"></script>
 	</body>
 
 </html>
+
+@code{
+
+	private Theme theme = Theme.System;
+
+	private string ThemeSelected => theme switch
+	{
+		Theme.Light => "light",
+		Theme.Dark  => "dark",
+		_           => "auto"
+	};
+
+	protected override async Task OnInitializedAsync()
+	{
+		theme = Theme.Dark;
+	}
+
+}

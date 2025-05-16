@@ -1,12 +1,28 @@
 <ul class="navbar-nav pt-lg-3">
-<AuthorizeView>
-	<li class="nav-item">
-		<NavLink class="nav-link" ActiveClass="active" href="/" Match="NavLinkMatch.All">
-			<span class="nav-link-icon d-md-none d-lg-inline-block"><IconHome/></span>
-			<span class="nav-link-title">Dashboard</span>
-		</NavLink>
-	</li>
-</AuthorizeView>
+<li class="nav-item">
+	<NavLink class="nav-link" ActiveClass="active" href="/" Match="NavLinkMatch.All">
+		<span class="nav-link-icon d-md-none d-lg-inline-block"><IconHome/></span>
+		<span class="nav-link-title">Dashboard</span>
+	</NavLink>
+</li>
+<li class="nav-item">
+	<NavLink class="nav-link" ActiveClass="active" href="/counter">
+		<span class="nav-link-icon d-md-none d-lg-inline-block"><IconPlus/></span>
+		<span class="nav-link-title">Counter</span>
+	</NavLink>
+</li>
+<li class="nav-item">
+	<NavLink class="nav-link" ActiveClass="active" href="/weather">
+		<span class="nav-link-icon d-md-none d-lg-inline-block"><IconListNested/></span>
+		<span class="nav-link-title">Weather</span>
+	</NavLink>
+</li>
+<li class="nav-item">
+	<NavLink class="nav-link" ActiveClass="active" href="/auth">
+		<span class="nav-link-icon d-md-none d-lg-inline-block"><IconLock/></span>
+		<span class="nav-link-title">Auth Required</span>
+	</NavLink>
+</li>
 </ul>
 
 @code {
