@@ -9,6 +9,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Client\Wangkanai.Pipeline.Client.csproj" />
+		<ProjectReference Include="..\Persistence\Wangkanai.Pipeline.Persistence.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
