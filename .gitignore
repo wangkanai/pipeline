@@ -9,7 +9,7 @@ dist/
 .idea/
 .vscode/
 package-lock.json
-Data/app.db
+Data/
 
 # User-specific files
 *.rsuser
