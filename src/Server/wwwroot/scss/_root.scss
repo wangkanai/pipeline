@@ -1,0 +1,11 @@
+@use "variables" as vars;
+
+:root,
+:host,
+[data-bs-theme="light"] {
+	--#{vars.$prefix}-page-padding-y: var(--tblr-spacer-2);
+}
+
+:root,
+[data-bs-theme="dark"] {
+}
