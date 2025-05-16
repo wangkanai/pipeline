@@ -3,6 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Wangkanai.Pipeline.Data;
 
-public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<ApplicationUser>(options)
+public class PipelineDbContext(DbContextOptions<PipelineDbContext> options) : IdentityDbContext<PipelineUser>(options)
 {
 }

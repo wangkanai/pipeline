@@ -10,7 +10,7 @@ using Wangkanai.Pipeline.Data;
 
 namespace Wangkanai.Pipeline.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(PipelineDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
