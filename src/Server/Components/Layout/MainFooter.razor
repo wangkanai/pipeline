@@ -1,0 +1,30 @@
+<footer class="footer footer-transparent d-print-none @ClassCss">
+	<div class="container-fluid">
+		<div class="row text-center align-items-center flex-row-reverse">
+			<div class="col-lg-auto ms-lg-auto">
+				<ul class="list-inline list-inline-dots mb-0">
+				<li class="list-inline-item">
+					<NavLink href="/legal/terms" class="link-secondary" tabindex="-1">Terms and Conditions</NavLink>
+				</li>
+				<li class="list-inline-item">
+					<NavLink href="/legal/privacy" class="link-secondary" tabindex="-1">Privacy Policy</NavLink>
+				</li>
+				</ul>
+			</div>
+			<div class="col-12 col-lg-auto mt-3 mt-lg-0">
+				<ul class="list-inline list-inline-dots mb-0">
+				<li class="list-inline-item">
+					Copyright © 2025 <NavLink href="/" class="link-secondary" tabindex="-1">Sarin Na Wangkanai</NavLink>. All rights reserved.
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+@code {
+
+	[Parameter]
+	public string? ClassCss { get; set; } = string.Empty;
+
+}

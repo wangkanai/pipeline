@@ -1,0 +1,64 @@
+@inject NavigationManager NavigationManager
+
+<AuthorizeView>
+	<Authorized>
+		<div class="nav-item dropdown">
+			<a @onclick="ShowToggle" class="nav-link nav-avatar d-flex lh-1 text-reset p-0@(ShowClass)" data-bs-toggle="dropdown" aria-label="Open user menu" aria-expanded="@ShowExpanded">
+				<span class="avatar avatar-sm" style="background-image: url(@avatar)"></span>
+				<div class="d-none d-lg-block ps-2">
+					<div>@name</div>
+					<div class="mt-1 small text-secondary">@role</div>
+				</div>
+			</a>
+			<div @onmouseleave="ShowToggle" class="dropdown-menu dropdown-menu-end dropdown-menu-arrow@(ShowClass)" data-bs-popper="static">
+				<NavLink class="dropdown-item" href="/account/manage">Profile</NavLink>
+				<NavLink class="dropdown-item" href="/account/manage/preference">Preference</NavLink>
+				<div class="dropdown-divider"></div>
+				<form action="Account/Logout" method="post" class="dropdown-item">
+				<AntiforgeryToken/>
+				<input type="hidden" name="ReturnUrl" value="@currentUrl"/>
+				<button type="submit" class="dropdown-item">Logout</button>
+				</form>
+			</div>
+		</div>
+	</Authorized>
+	<NotAuthorized>
+		<div class="nav-item dropdown">
+			<a @onclick="ShowToggle" class="nav-link nav-avatar d-flex lh-1 text-reset p-0@(ShowClass)" data-bs-toggle="dropdown" aria-label="Open user menu" aria-expanded="@ShowExpanded">
+				<span class="avatar avatar-sm" style="background-image: url(@avatar)"></span>
+			</a>
+			<div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow@(ShowClass)" data-bs-popper="static">
+				<NavLink class="dropdown-item" href="/Account/Login">Login</NavLink>
+			</div>
+		</div>
+	</NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+	private bool   ShowValue    { get; set; }
+	private string ShowClass    => ShowValue ? " show" : "";
+	private string ShowExpanded => ShowValue ? "true" : "false";
+	private void   ShowToggle() => ShowValue = !ShowValue;
+
+	private string? currentUrl;
+	private string? name   = string.Empty;
+	private string? role   = string.Empty;
+	private string? avatar = string.Empty;
+
+	protected override async Task OnInitializedAsync()
+	{
+		currentUrl                        =  NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+		NavigationManager.LocationChanged += OnLocationChanged;
+
+		name   = "Sarin Na Wangkanai";
+		avatar = $"'data:image/png;base64,{UserAvatar.Default}'";
+	}
+
+	private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+	{
+		currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+		StateHasChanged();
+	}
+
+}

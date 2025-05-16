@@ -1,0 +1,25 @@
+@inherits LayoutComponentBase
+
+@layout MainLayout
+
+<div class="page-header">
+	<div class="container-fluid">
+		<div class="row g-2 align-items-center">
+			<div class="col">
+				<div class="page-pretitle">Legal</div>
+				<h2 class="page-title">
+				<SectionOutlet SectionName="page-title"/>
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page-body">
+	<div class="container-fluid">
+		@Body
+	</div>
+</div>
+
+@code {
+
+}
