@@ -131,6 +131,7 @@ indent_style=tab
 
 [*.{css, scss, less, sass}]
 indent_size=2
+ij_css_value_alignment = on_value
 
 [*.{js, js.map}]
 indent_size=2

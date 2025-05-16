@@ -1,0 +1,38 @@
+{
+	"name": "pipeline",
+	"version": "1.0.0",
+	"description": "Wangkanai Pipeline",
+	"private": true,
+	"scripts": {
+		"watch": "sass --watch wwwroot/scss/pipeline.scss:wwwroot/dist/pipeline.css",
+		"scss": "sass wwwroot/scss/pipeline.scss:wwwroot/dist/pipeline.css",
+		"minify": "postcss wwwroot/dist/pipeline.css --no-map --use cssnano --output wwwroot/dist/pipeline.min.css",
+		"lib": "npm-run-all -p lib-*",
+		"lib-tabler": "cpx \"node_modules/@tabler/core/**/*.*\" wwwroot/lib/tabler/",
+		"lib-icons": "cpx \"node_modules/@tabler/icons/**/*.*\" wwwroot/lib/icons/",
+		"lib-webfont": "cpx \"node_modules/@tabler/icons-webfont/**/*.*\" wwwroot/lib/icons-webfont/",
+		"clean": "npm-run-all -p clean-*",
+		"clean-dist": "rimraf wwwroot/dist/",
+		"clean-lib": "rimraf wwwroot/lib/",
+		"build": "npm-run-all -s clean lib deploy",
+		"deploy": "npm run lib && npm run scss && npm run minify"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wangkanai/pipeline.git"
+	},
+	"dependencies": {
+		"@tabler/core": "^1.2.0",
+		"@tabler/icons": "^3.31.0",
+		"@tabler/icons-webfont": "^3.31.0"
+	},
+	"devDependencies": {
+		"cpx": "^1.5.0",
+		"cssnano": "^7.0.7",
+		"nodemon": "^3.1.10",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^11.0.1",
+		"rimraf": "^6.0.1",
+		"sass": "^1.89.0"
+	}
+}
