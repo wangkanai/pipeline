@@ -1,0 +1,36 @@
+<ul class="navbar-nav pt-lg-3">
+<AuthorizeView>
+	<li class="nav-item">
+		<h3 class="nav-header">Mula Team</h3>
+	</li>
+	<li class="nav-item">
+		<NavLink class="nav-link" ActiveClass="active" href="/" Match="NavLinkMatch.All">
+			<span class="nav-link-icon d-md-none d-lg-inline-block"><IconHome/></span>
+			<span class="nav-link-title">Dashboard</span>
+		</NavLink>
+	</li>
+	<li class="nav-item">
+		<NavLink class="nav-link" ActiveClass="active" href="/admin/tenant">
+			<span class="nav-link-icon d-md-none d-lg-inline-block"><IconTent/></span>
+			<span class="nav-link-title">Tenants</span>
+		</NavLink>
+	</li>
+
+	<li class="nav-item">
+		<NavLink class="nav-link" ActiveClass="active" href="/admin/company">
+			<span class="nav-link-icon d-md-none d-lg-inline-block"><IconCompany/></span>
+			<span class="nav-link-title">Company</span>
+		</NavLink>
+	</li>
+	<li class="nav-item">
+		<NavLink class="nav-link" ActiveClass="active" href="/audit-trail">
+			<span class="nav-link-icon d-md-none d-lg-inline-block"><IconAuditTrail/></span>
+			<span class="nav-link-title">Audit Trail</span>
+		</NavLink>
+	</li>
+</AuthorizeView>
+</ul>
+
+@code {
+
+}

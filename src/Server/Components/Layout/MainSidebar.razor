@@ -1,5 +1,24 @@
-<h3>MainSidebar</h3>
+<aside class="navbar navbar-vertical navbar-expand-lg navbar-noscroll">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-brand navbar-brand-autodark">
+			<SidebarBrand/>
+		</div>
+		<div class="navbar-nav flex-row d-lg-none">
+			<SidebarMenu/>
+		</div>
+		<div class="collapse navbar-collapse" id="sidebar-menu">
+			<AuthorizeView>
+				<Authorized>
+					<SidebarNav/>
+				</Authorized>
+			</AuthorizeView>
+		</div>
+	</div>
+</aside>
 
 @code {
-	
+
 }
